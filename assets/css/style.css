@@ -2221,9 +2221,9 @@ strong {
 /* ===== # Contact ===== */
 .contact-sec {
     padding: 50px 40px 30px;
-    display: flex;
+    /* display: flex;
     gap: 60px;
-    align-items: center;
+    align-items: center; */
 }
 .contact-sec .contact-form-wrap {
     display: flex;
