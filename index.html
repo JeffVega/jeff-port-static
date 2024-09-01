@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== Meta ===== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.png">
+
+    <!-- ===== Title ===== -->
+    <title>Jeff's - Personal Portfolio</title>
+
+    <!-- ===== LineAwesome ===== -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <!-- ===== Fonts ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== Stylesheet ===== -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- ===== Magic Cursor Start ===== -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- ===== Magic Cursor End ===== -->
+    <!-- ===== Magic Cursor Start ===== -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- ===== Magic Cursor End ===== -->
+
+
+    <!-- ===== Loader Start ===== -->
+    <div class="preloader-wrap">
+        <div class="loader">
+            <img src="./assets/imgs/loader-2.gif" alt="loader">
+        </div>
+    </div>
+    <!-- ===== Loader End ===== -->
+
+
+    <!-- ===== Main Start ===== -->
+    <main class="bronx-main home-page">
+
+        <!-- ===== Popup Menu Start ===== -->
+        <div class="popup-menu-wrap">
+            <div class="popup-menu-header">
+                <div class="local-temperature">
+                    <a href="index.html"><a href="index.html"><span>Local/</span><span id="coordinates"></span></a></a>
+                </div>
+
+                <div class="popup-menu-close-btn">
+                    <div class="icon">
+                        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" color="rgba(214, 214, 215, 0.7)">
+                            <path d="M6 12h6m6 0h-6m0 0V6m0 6v6" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- <div class="right text-right">
+                    <a href="contact.html" class="theme-btn">Schedule a call</a>
+                </div> -->
+            </div>
+            <div class="popup-menu">
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">
+                                <span class="count">(1)</span>
+                                <span>Home</span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <span class="count">(2)</span>
+                                <span>Contact</span>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="popup-menu-footer">
+                <div class="copyright">
+                    <p>&copy;2024 ALL RIGHTS RESERVED</p>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://instagram.com" target="_blank">Instagram <svg xmlns="http://www.w3.org/2000/svg"
+                                    focusable="false" viewBox="0 0 24 24" color="rgb(29, 29, 31)">
+                                    <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z">
+                                    </path>
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com" target="_blank">Dribbble <svg xmlns="http://www.w3.org/2000/svg"
+                                    focusable="false" viewBox="0 0 24 24" color="rgb(29, 29, 31)">
+                                    <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z">
+                                    </path>
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank">Twitter <svg xmlns="http://www.w3.org/2000/svg"
+                                    focusable="false" viewBox="0 0 24 24" color="rgb(29, 29, 31)">
+                                    <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z">
+                                    </path>
+                                </svg></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- ===== Popup Menu End ===== -->
+
+        <!-- ===== Smooth Scroll Start ===== -->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+
+                <!-- ===== Hero Section Start ===== -->
+                <section class="hero-sec">
+
+                    <!-- ===== Header Start ===== -->
+                    <header class="header-wrap scroll-animation" data-animation="slide_up">
+                        <div class="custom-row">
+
+                            <!-- ===== Local Time ===== -->
+                            <div class="header-local-time-box">
+                                <a href="index.html"><span>Local/</span></a>
+                                <span id="realtime">00:00</span>
+                            </div>
+
+                            <!-- ===== Humberg Menu ===== -->
+                            <div class="header-middle">
+                                <div class="humberg-menu">
+                                    <a href="contact.html">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+                                        <svg width="30px" height="30px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                                            <path d="M9 9L13.5 12L18 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M3 13.5H5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M1 10.5H5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M5 7.5V7C5 5.89543 5.89543 5 7 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H7C5.89543 19 5 18.1046 5 17V16.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <!-- ===== Header Contact Button ===== -->
+                            <div class="header-right">
+                                <a href="" class="theme-btn">Navigate Here</a>
+                            </div>
+
+                        </div>
+                    </header>
+                    <!-- ===== Header End ===== -->
+
+
+                    <!-- ===== Hero Section Content Start ===== -->
+                    <div class="hero-sec-content">
+                        <span class="available-status">
+                            AVAILABLE FOR FREELANCE
+                        </span>
+
+                        <h1>
+                            <span><span class="timeline-anim scroll-animation" data-animation="slide_down">JEFF</span></span>
+                            <span><span class="timeline-anim scroll-animation" data-animation="slide_down">VEGA</span></span>
+                        </h1>
+                    </div>
+                    <!-- ===== Hero Section Content End ===== -->
+
+
+                    <!-- ===== Hero Footer Start ===== -->
+                    <div class="hero-footer-wrap scroll-from-bottom">
+                        <p>BASED IN CALIFORNIA, LA</p>
+                        <div class="hero-footer-right">
+                            <a href="#" class="link-with-line">FULL STACK DEVELOPER</a>
+                            <p>+ SEO specialist</p>
+                        </div>
+                    </div>
+                    <!-- ===== Hero Footer End ===== -->
+
+                </section>
+                <!-- ===== Hero Section End ===== -->
+
+                <!-- ===== Full Image Start ===== -->
+                <div class="full-image-sec pt-30">
+                    <div class="full-image-box">
+                        <img class="scaleDown" src="./assets/imgs/cali-beach.jpg" alt="about">
+                    </div>
+                </div>
+                <!-- ===== Full Image End ===== -->
+
+                <!-- ===== Video Start ===== -->
+                <!-- <div class="video-sec">
+                    <video src="./assets/video/video.mp4" loop="true" muted="true" autoplay playsinline=""></video>
+                </div> -->
+                <!-- ===== Video End ===== -->
+
+
+                <!-- ===== Featured Work Start ===== -->
+                <section class="featured-work-sec">
+                    <div class="section-header">
+                        <div class="left">
+                            <h3>
+                                <span><span class="timeline-anim scroll-animation" data-animation="slide_down">FEATURED</span></span>
+                                <span><span class="timeline-anim scroll-animation" data-animation="slide_down">WORK</span></span>
+                            </h3>
+                        </div>
+                        <div class="right">
+                            <p>A frontend developer's artistry thrives in the browser's canvas. With elegant code and keen eye for design, they sculpt intuitive interfaces from a palette of HTML, CSS, and JavaScript</p>
+                        </div>
+                    </div>
+
+                    <div class="featured-work-lists">
+
+                        <!-- Featured Cart -->
+                        <div class="featured-card">
+                            <a class="link-overlay" href="contact.html"></a>
+                            <!-- <div class="img-box">
+                                <img src="./assets/imgs/work-1.jpeg" alt="Work">
+                            </div> -->
+                            <div class="content">
+                                <div class="left">
+                                    <p class="title">Supplment Store Application</p>
+                                    <p class="subtitle">Please Contact For  Details</p>
+                                </div>
+                                <div class="right">
+                                    <span class="date">2023-2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Featured Cart -->
+                        <div class="featured-card">
+                            <a class="link-overlay" href="contact.html"></a>
+                            <!-- <div class="img-box">
+                                <img src="./assets/imgs/work-2.jpeg" alt="Work">
+                            </div> -->
+                            <div class="content">
+                                <div class="left">
+                                    <p class="title">Run Club Locator</p>
+                                    <p class="subtitle">Please Contact For  Details</p>
+                                </div>
+                                <div class="right">
+                                    <span class="date">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-card">
+                            <a class="link-overlay" href="contact.html"></a>
+                            <!-- <div class="img-box">
+                                <img src="./assets/imgs/work-2.jpeg" alt="Work">
+                            </div> -->
+                            <div class="content">
+                                <div class="left">
+                                    <p class="title">Portugal Best Hostels</p>
+                                    <p class="subtitle">Please Contact For  Details</p>
+                                </div>
+                                <div class="right">
+                                    <span class="date">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-card">
+                            <a class="link-overlay" href="contact.html"></a>
+                            <!-- <div class="img-box">
+                                <img src="./assets/imgs/work-2.jpeg" alt="Work">
+                            </div> -->
+                            <div class="content">
+                                <div class="left">
+                                    <p class="title">Lite PickleBall</p>
+                                    <p class="subtitle">Please Contact For  Details</p>
+                                </div>
+                                <div class="right">
+                                    <span class="date">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Featured Cart -->
+                      
+
+                    </div>
+                </section>
+                <!-- ===== Featured Work End ===== -->
+
+
+                <!-- ===== About Start ===== -->
+                <section class="about-sec">
+                    <div class="section-header2">
+                        <h3 class="title sticky-statement2 scroll-animation" data-animation="slide_and_scale">
+                            <span class="transform-anim"><span class="timeline-anim scroll-animation" data-animation="slide_down">MORE ABOUT</span></span>
+                            <span class="transform-anim"><span class="timeline-anim scroll-animation" data-animation="slide_down">JEFF</span></span>
+                        </h3>
+                    </div>
+
+                    <div class="about-bottom-content-wrap">
+                      
+                        <div class="about-bottom-content">
+                            <div>
+                                <h4>I'M AN INNOVATIVE FULL STACK DEVELOPER  <br>MY PASSION FOR CLEAN CODE ARCHITECTURE, <br>AND SCALABLE SOLUTIONS SHINES THROUGH IN MY WORK.</h4>
+                            </div>
+                            <p>I'm on the cutting edge of emerging technologies that allow me to bring complex digital systems to life. Though my methods may involve multiple languages and frameworks, my dedication to robust, maintainable code is unparalleled. I thrive on finding "elegant solutions" and believe that with the right approach, software can transform user experiences and business operations.</p>
+                            <p class="responsive-mode">I'm on the edge of no-code tools that allow me to bring my creativity to life.</p>
+                            <a href="/assets/daccord/resume.pdf" download class="theme-btn">Download Resume</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== About End ===== -->
+
+
+
+                <!-- ===== Experience Start ===== -->
+                <section class="experience-sec">
+                    <div class="section-header">
+                        <div class="left">
+                            <h3>
+                                <span><span class="timeline-anim scroll-animation" data-animation="slide_down">MY</span></span>
+                                <span><span class="timeline-anim scroll-animation" data-animation="slide_down">EXPERTISE</span></span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- ==== Experience lists ==== -->
+                    <div class="experience-list-wrap">
+                        <div class="experience-lists">
+                            <div class="experience-box">
+                                <div class="experience-button-box">
+                                   
+                                </div>
+                                <h4>
+                                    <span>(1)</span>
+                                    <span>APP DESIGN</span>
+                                </h4>
+                                <p>Craft intuitive navigation that makes features accessible. Choose layouts and
+                                    graphics that fit your app's personality.</p>
+                            </div>
+                            <div class="experience-box">
+                                <div class="experience-button-box">
+                                   
+                                </div>
+                                <h4>
+                                    <span>(2)</span>
+                                    <span>WEB DESIGN</span>
+                                </h4>
+                                <p>Polish animations and microinteractions that add delight. Every detail matters when
+                                    sculpting an web.</p>
+                            </div>
+                            <div class="experience-box">
+                                <div class="experience-button-box">
+                                
+                                </div>
+                                <h4>
+                                    <span>(3)</span>
+                                    <span>PHOTOGRAPHY <span class="pro">PRO</span></span>
+                                </h4>
+                                <p>With the click of a shutter, an image is imprinted that tells a story or makes a
+                                    statement. an image is imprinted that tells a story or makes a statement.</p>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </section>
+                <!-- ===== Experience End ===== -->
+
+
+                <!-- ===== Motivation Start ===== -->
+                <section class="motivation-sec">
+                    <div class="custom-row">
+                        <div class="left">
+                            <h3>MOTIVATION</h3>
+                        </div>
+                        <div class="right">
+                            <div class="motivation-content">
+                                <p>Being a web developer is more than just a job; it's a creative outlet where your ideas come to life. As a full-stack developer with a focus on front-end development, you have the ability to turn concepts into functional and visually engaging realities. Your work can tell stories, showcase brands, or even make a significant impact. With the web constantly evolving, so do your opportunities.</p>
+                                <p>As a developer, you merge art and technology to create seamless digital experiences that educate, entertain, and inspire users. No two days are the same—one day you might be designing intuitive interfaces, the next you're coding responsive layouts. Front-end development keeps you both challenged and creatively fulfilled</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Motivation End ===== -->
+
+                <!-- ===== Full Image Start ===== -->
+                <!-- <div class="full-image-sec">
+                    <div class="full-image-box">
+                        <img class="scaleDown" src="./assets/imgs/work-4.jpeg" alt="about">
+                    </div>
+                </div> -->
+                <!-- ===== Full Image End ===== -->
+
+
+                <!-- ===== Experience2 Start ===== -->
+                <section class="experience2-sec sticky-elem-sec">
+                    <div class="custom-row">
+                        <div class="left">
+                            <h3 class="sticky-statement">EXPERIENCE</h3>
+                        </div>
+
+                        <div class="right">
+                            <div class="experience2-lists">
+                                
+                                <div class="experience2-box">
+                                    <div class="experience2-box-header">
+                                        Eno Web Design
+                                    </div>
+                                    <div class="experience2-box-body">
+                                        <h4>Next.js/ React Developer & SEO Specialist <span>2023 – Present</span></h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="experience2-box">
+                                    <div class="experience2-box-header">
+                                        Verifast 
+                                    </div>
+                                    <div class="experience2-box-body">
+                                        <h4>Vue.js Developer & Laravel Developer <span>2020 - 2023</span></h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                                <div class="experience2-box">
+                                    <div class="experience2-box-header">
+                                        Chingu Voyage 8
+                                    </div>
+                                    <div class="experience2-box-body">
+                                        <h4>Frontend Developer <span>2019 – 2020</span></h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Experience2 End ===== -->
+
+
+                <!-- ===== Favorite Stack Start ===== -->
+                <section class="favourite-stack-sec sticky-elem-sec">
+                    <div class="custom-row">
+                        <div class="left">
+                           
+                        </div>
+                        <div class="right right-height">
+                            <div class="favourite-stack-lists">
+
+                                <div class="favourite-stack-box">
+                                    <div class="favourite-stack-box-left">
+                                        <div class="icon">
+                                            <img src="./assets/imgs/next-logo.webp" alt="NEXTJS">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Next.js, and Supabase</h4>
+                                        <div class="content-body">
+                                            <h4>FULL STACK DEVELOPER <span></span></h4>
+                                            <p>The internet is your canvas. NEXT.js Help with SEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite-stack-box">
+                                    <div class="favourite-stack-box-left">
+                                        <div class="icon">
+                                            <img src="./assets/imgs/mern-logo.webp" alt="figma">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h4>MERN</h4>
+                                        <div class="content-body">
+                                            <h4>MongoDB, Express.js, React, and Node <span></span></h4>
+                                            <p>This stack work together to provide an end to end framework.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- ===== Favourite Stack End ===== -->
+
+
+   
+
+
+
+
+                <!-- ===== Full Image Start ===== -->
+                <!-- <div class="full-image-sec">
+                    <div class="full-image-box">
+                        <img class="scaleDown" src="./assets/imgs/work-detail.png" alt="about">
+                    </div>
+                </div> -->
+                <!-- ===== Full Image End ===== -->
+
+
+                <!-- ===== FAQ Start ===== -->
+                <section class="faq-sec">
+                    <div class="section-header3">
+                        <h3 class="title">
+                            <span><span class="timeline-anim scroll-animation" data-animation="slide_down">FREQUENTLY</span></span>
+                            <span><span class="timeline-anim scroll-animation" data-animation="slide_down">ASKED QUESTIONS</span></span>
+                        </h3>
+                    </div>
+
+                    <div class="accordion faq-wrap" id="accordionExample">
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    WHAT INDUSTRIES DO YOU SPECIALIZE IN? <i class="las la-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>I have experience working across various industries including but not limited to
+                                        technology, healthcare, fashion, hospitality, and non-profit organizations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    WHAT SERVICES DO YOU OFFER AS A DESIGNER? <i class="las la-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>As a designer, I offer a range of services including graphic design, web design,
+                                        branding, illustration, and more. My goal is to provide creative solutions that
+                                        effectively communicate your message and resonate with your audience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    CAN YOU PROVIDE EXAMPLES OF YOUR PREVIOUS WORK? <i class="las la-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Absolutely! You can browse through my portfolio on this website to see a
+                                        selection of my previous projects. Each project showcases my design capabilities
+                                        and creative approach across various mediums and industries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    HOW DO YOU APPROACH BRANDING PROJECTS? <i class="las la-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>When it comes to branding projects, I believe in delving deep into understanding
+                                        the client's brand identity, target audience, and market positioning. I strive
+                                        to create cohesive visual identities that effectively communicate the brand's
+                                        values and personality across various touchpoints, including logos, color
+                                        palettes, typography, and brand guidelines.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    CAN YOU WALK ME THROUGH YOUR DESIGN PROCESS? <i class="las la-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Certainly! My design process typically involves understanding the client's needs
+                                        and objectives, conducting research, brainstorming ideas, sketching concepts,
+                                        refining designs, and delivering high-quality final products.</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </section>
+                <!-- ===== FAQ End ===== -->
+
+
+                <!-- ===== CTA Start ===== -->
+                <section class="cta-sec">
+                    <div class="section-header2">
+                        <h3 class="title">
+                            <span>LET'S WORK</span>
+                            <span>TOGETHER</span>
+                        </h3>
+                        <a href="/contact.html" class="theme-btn">CONTACT NOW</a>
+                    </div>
+
+           
+                </section>
+                <!-- ===== CTA End ===== -->
+
+
+                <!-- ===== Footer Start ===== -->
+                <footer class="footer-area">
+                    <div class="footer-big-text">
+                        <span class="timeline-anim scroll-animation" data-animation="slide_down">JEFF</span>
+                    </div>
+
+                    <div class="copyright">
+                        <p>&copy;2024 JEFF'S PORT</p>
+                        <div class="right">
+                            <a href="#" id="back-to-top">GO BACK TO TOP</a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- ===== Footer End ===== -->
+
+            </div>
+        </div>
+        <!-- ===== Smooth Scroll End ===== -->
+
+
+        <!-- ===== Experience Popup Start ===== -->
+        <div class="experience-popup">
+            <div class="experience-popup-content-wrap">
+                
+                <div class="close-experience-popup-btn">
+                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" color="rgba(214, 214, 215, 0.7)">
+                        <path d="M6 12h6m6 0h-6m0 0V6m0 6v6" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+
+                <div class="experience-popup-content">
+                    <div class="experience-popup-header">
+                        <span class="price">STARTS AT $3,999</span>
+                        <h3>WEB DESIGN</h3>
+                    </div>
+                    <p>Web designing is one my high end skill<br> that i give to my customers.</p>
+                    <div class="experience-popup-features">
+                        <h4>KEY FEATURES</h4>
+                        <div class="experience-popup-feature-lists">
+                            <div class="experience-popup-feature">
+                                <span>(1)</span> Web Application Design
+                            </div>
+                            <div class="experience-popup-feature">
+                                <span>(2)</span> Responsive Design
+                            </div>
+                            <div class="experience-popup-feature">
+                                <span>(3)</span> Animation Effects
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-popup-btns">
+                        <a href="#" class="theme-btn2">Get started</a>
+                        <a href="#" class="theme-btn3">E-Mail</a>
+                    </div>
+                </div>
+                <div class="experience-popup-img">
+                    <img src="./assets/imgs/exp-popup.jpeg" alt="experience">
+                </div>
+            </div>
+        </div>
+        <!-- ===== Experience Popup End ===== -->
+
+    </main>
+    <!-- ===== Main End ===== -->
+
+
+
+
+    <!-- ===== Scripts ===== -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+    <script src="./assets/js/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/ScrollToPlugin.min.js"></script>
+
+    <script src="./assets/js/ScrollSmoother.min.js"></script>
+    <script src="./assets/js/SplitText.min.js"></script>
+    <script src="./assets/js/jarallax.js"></script>
+    <script src="./assets/js/jarallax-element.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/themescroll.js"></script>
+</body>
+
+</html>
